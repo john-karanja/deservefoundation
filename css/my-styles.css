@@ -1,3 +1,140 @@
+body {
+	font-family: 'Fjalla One', 'Cantarell', sans-serif, helvetica;
+	line-height: 1.7;
+	color: #40313f;
+}
+/**********************
+Navbar
+***********************/
+.navbar {
+	border-radius: 0;
+	background-color: #73296e;
+	height: 80px;
+	border: none;
+	box-shadow: 1px 1px 9px rgba(0,0,0,0.5);
+	margin-bottom: 0;
+}
 .navbar img {
 	max-width: 200px;
+	
 }
+.navbar-right {
+	margin-top: 15px;
+}
+/**********************
+Jumbotron
+***********************/
+.jumbotron {
+	background: -moz-linear-gradient(left, rgba(115,41,110,0.2), rgba(115,41,110,0.2)), url(../images/african1.jpg);
+	background: -webkit-linear-gradient(left, rgba(115,41,110,0.2), rgba(115,41,110,0.2)), url(../images/african1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 570px;
+	background-position:  50% 30%;
+	margin-bottom: 0;
+}
+.jumbotron .jumbo-heading {
+	margin-top: 90px;
+}
+/**********************
+Typography
+***********************/
+p {
+  font-family: 'Cantarell', sans-serif, helevetica;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #fff;
+	font-size: 1.12em;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+	background-color: transparent;
+	color: #fff;
+	border-bottom: 2px solid #fff;
+	padding-bottom: 1.5px;
+}
+.jumbotron .jumbo-heading, .jumbotron .text{
+	color: #fff;	
+}
+.jumbotron .jumbo-heading h1, .section-heading h1 {
+	font-family: 'Fjalla One', sans-serif;
+}
+.jumbotron .text p {
+	font-family: 'Cantarell', sans-serif, helevetica;
+  font-size: ;
+}
+.jumbotron span {
+ border-bottom: 2px solid;
+}
+.section-heading h1 {
+	text-align: center;	
+}
+.problem-text p {
+	font-size: 1.2em;
+	text-align: center;
+	margin: 20px 0;
+}
+/**********************
+Colors
+***********************/
+.problem, .help {
+	background-color: #faf9f9;
+}
+.plan-box .fa {
+	color: #73296e;
+	font-size: 3em
+}
+/**********************
+Spacing
+***********************/
+section.problem, section.plan, section.help {
+	padding: 40px 0;
+}
+.plan-box, .help .col-sm-4 {
+	margin: 20px 0;
+}
+/**********************
+Buttons
+***********************/
+button.help-btn, .body-btn button {
+	border-radius: 1px;
+	border: none;
+	padding: 15px 30px;
+	font-family: 'Fjalla One', sans-serif;
+}
+section.problem .body-btn {
+	text-align: center;
+}
+.body-btn button {
+	background-color: #73296e;
+	color: #fff;
+	width: 200px;
+}
+/**********************
+Cards
+***********************/
+.plan-text {
+/* 	box-shadow: 0px 0px 1px rgba(0,0,0,0.3); */
+/* 	border: 1px solid rgba(0,0,0,0.1); */
+/* text-align: center; */
+	padding: 0px 0px; 
+	min-height: 250px;
+}
+.help .help-card {
+	box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
+	background-color: #fff;
+	padding: 20px;
+}
+/**********************
+Images
+***********************/
+.plan img {
+	max-width: 100%;
+}
+
+
+
+
+
+
+
+
