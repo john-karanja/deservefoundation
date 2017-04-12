@@ -55,7 +55,7 @@ p {
 .jumbotron .jumbo-heading, .jumbotron .text{
 	color: #fff;	
 }
-.jumbotron .jumbo-heading h1, .section-heading h1 {
+h1 {
 	font-family: 'Fjalla One', sans-serif;
 }
 .jumbotron .text p {
@@ -65,7 +65,7 @@ p {
 .jumbotron span {
  border-bottom: 2px solid;
 }
-.section-heading h1 {
+.section-heading h {
 	text-align: center;	
 }
 .problem-text p {
@@ -73,10 +73,19 @@ p {
 	text-align: center;
 	margin: 20px 0;
 }
+section.about p {
+	font-size: 1.2em;
+}
+section.team .founder-info p {
+	font-size: 1.044em;
+}
+section.team span.roles {
+	font-size: 0.7em;
+}
 /**********************
 Colors
 ***********************/
-.problem, .help {
+.problem, .help, section.about, section.team {
 	background-color: #faf9f9;
 }
 .plan-box .fa {
@@ -86,11 +95,15 @@ Colors
 /**********************
 Spacing
 ***********************/
-section.problem, section.plan, section.help {
+section.problem, section.plan, section.help, section.about {
 	padding: 40px 0;
 }
 .plan-box, .help .col-sm-4 {
-	margin: 20px 0;
+	margin: 20px 0px;
+}
+section.team .row {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 /**********************
 Buttons
@@ -120,16 +133,22 @@ Cards
 	min-height: 250px;
 }
 .help .help-card {
-	box-shadow: 0px 0px 1px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
 	background-color: #fff;
 	padding: 20px;
+}
+section.team img, .founder-info {
+	box-shadow: 0px 0px 2px rgba(0,0,0,0.1);
+	background-color: #fff;
+	padding: 25px;
 }
 /**********************
 Images
 ***********************/
-.plan img {
+.plan img, section.team img {
 	max-width: 100%;
 }
+
 
 
 
