@@ -17,6 +17,8 @@ Navbar
 .navbar img {
 	max-width: 150px;
 	height: 50px;
+	position: relative;
+	z-index: 1000;
 }
 .navbar-right {
 	margin-top: 18px;
@@ -150,9 +152,7 @@ a {
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	background-color: #73296e;
-	position: relative;
-	z-index: 1000; 
-	
+	position: relative;	
 }
 .navbar-default .navbar-toggle {
 	border: none;
@@ -336,6 +336,9 @@ Media Queries
 		background-position: 100%;
 		height: 500px;
 	}
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		z-index: 1000;
+}
 }
 @media only screen and (max-width: 550px) {
 	.problem-text p {
