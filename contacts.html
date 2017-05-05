@@ -52,7 +52,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10">
-						<h1>Here's how you can get in touch with us</h1>
+						<div class="section-heading">
+							<h1>Here's how you can get in touch with us</h1>
+						</div>
 					</div>
 				</div>
 				<div class="row">
@@ -86,20 +88,98 @@
 								<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
 								<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 							</form>
-							<button class="help-btn btn btn-lg btn-default">Volunteer</button>
-							<button class="help-btn btn btn-lg btn-default">Beneficiary</button>
+							<button class="help-btn btn btn-lg btn-default" data-toggle="modal" data-target="#modal-volunteer">Volunteer</button>
+							<button class="help-btn btn btn-lg btn-default" data-toggle="modal" data-target="#modal-volunteer">Beneficiary</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
+		<!--Modal Volunteer -->
+			<div class="modal fade" id="modal-volunteer" role="dialog">
+			    <div class="modal-dialog">
+			      <!-- Modal content-->
+			    	<div class="modal-content">
+				      	<div class="modal-header">
+				        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+				          	<h4 class="modal-title">Become a Volunteer</h4>
+				        </div>
+				        <div class="modal-body">
+				        	<p>To become a volunteer kindly fill the form below and we will get in touch with you.</p>
+		                  	<form action="">
+					            <div class="form-group">
+					                <label for="email">Names</label>
+					                <input type="text" class="form-control">
+					            </div>
+								<div class="form-group">
+								    <label for="email">Email:</label>
+								    <input type="email" class="form-control">
+								</div>
+								<div class="form-group">
+								    <label for="tel">Phone Number:</label>
+									<input type="tel" class="form-control">
+								</div>
+								<div class="form-group">
+					                <label for="message">Message</label>
+					                <textarea type="text" class="form-control" rows="3"></textarea>
+					            </div>
+					            <button type="submit" class="btn btn-lg btn-default">Send</button>
+				            </form>
+				        </div>
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        </div>
+			      	</div> 
+			    </div>
+			</div>
+
+		  	<!--Modal Benefit-->
+			  <div class="modal fade" id="modal-benefit" role="dialog">
+			    <div class="modal-dialog">
+			      <!-- Modal content-->
+			    	<div class="modal-content">
+				      	<div class="modal-header">
+				        	<button type="button" class="close" data-dismiss="modal">&times;</button>
+				          	<h4 class="modal-title">Become a Beneficiary</h4>
+				        </div>
+				        <div class="modal-body">
+				        	<p>To become a Beneficiary kindly fill the form beelow and we will get in touch with you.</p>
+		                  	<form action="">
+					            <div class="form-group">
+					                <label for="email">Names</label>
+					                <input type="text" class="form-control">
+					            </div>
+								<div class="form-group">
+								    <label for="email">Email:</label>
+								    <input type="email" class="form-control">
+								</div>
+								<div class="form-group">
+								    <label for="tel">Phone Number:</label>
+									<input type="tel" class="form-control">
+								</div>
+								<div class="form-group">
+					                <label for="message">Message</label>
+					                <textarea type="text" class="form-control" rows="3"></textarea>
+					            </div>
+					            <button type="submit" class="btn btn-lg btn-default">Send</button>
+				            </form>
+				        </div>
+				        <div class="modal-footer">
+				          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				        </div>
+			      	</div> 
+			    </div>
+			</div>
 		<!-- Message -->
 		<section class="message">
          	<div class="container">
             	<div class="contacts-box">
               		<div class="row">
                 		<div class="col-sm-8">
-                  			<h1>Send us a message</h1>
+                			<div class="section-heading">
+                  				<h1>Send us a message</h1>
+                  			</div>
                   			<form action="">
                     			<div class="form-group">
                       				<label for="email">Names</label>
@@ -133,5 +213,9 @@
 					</div>
 				</div>
 		</footer>     
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>

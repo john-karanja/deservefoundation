@@ -72,7 +72,7 @@ h1 {
 .section-heading h1 {
 	text-align: center;	font-size: 2.4em;
 }
-.problem .section-heading h1, .about h1, .team h1 {
+.problem .section-heading h1, .about h1, .team h1, .contacts-page h1 {
 	text-align: left;
 }
 .problem-text p {
@@ -88,7 +88,7 @@ section.team .founder-info p {
 section.team span.roles {
 	font-size: 0.7em;
 }
-section.message form label {
+section.message form label, .modal-body form label {
 	font-weight: 400;
 }
 .footer-copyright p {
@@ -98,7 +98,9 @@ section.message form label {
 .footer h3, .footer li p{
 	font-size: 1em;
 }
-
+.modal-body p {
+	text-align: center;
+}
 /**********************
 Links
 ***********************/
@@ -126,6 +128,10 @@ section.team ul li {
 .footer-copyright a {
 	color: #fff;
 }
+.modal-header h4 {
+	font-size: 1.6em;
+	text-align: center
+}
 /**********************
 Colors
 ***********************/
@@ -142,6 +148,26 @@ Colors
 a {
 	color: #40313f;
 }
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+	background-color: #73296e;
+	position: relative;
+	z-index: 1000; 
+	
+}
+.navbar-default .navbar-toggle {
+	border: none;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background-color: #fff;
+}
+.navbar-toggle {
+	padding: 20px 20px;
+}
+.modal-header, .modal-footer {
+	background-color: #73296e;
+	color: #fff;
+}
+
 /**********************
 Spacing
 ***********************/
@@ -185,26 +211,26 @@ button.btn {
 	height: 30px;
 	transition: 0.3s
 }
-button.btn.help-btn:hover, .message button:hover {
+button.btn.help-btn:hover, .message button:hover, .modal-body form button:hover {
 	background-color: #297353;
 	color: #fff;
 	box-shadow: 1px 5px 3px 2px rgba(0,0,0,0.6);
 }
 .jumbotron button.btn, .problem button.btn {
-	margin-top: -2.33333333333%;
+	margin-top: -3%;
 	display: inline-block;
 }
 .about form, .contacts .help-btn-cont form {
 	display: inline-block;
 }
-.message button {
+.message button, .modal-body form button {
 	margin-top: 7px;
 	background-color: #73296e;
 	height: 40px;
 	padding: 10px 20px;
 	transition: 0.3s;
 }
-.message button:hover {
+.message button:hover, .modal-body form button:hover {
 	background-color: #4d1c4a;
 }
 .help-btn-cont form input {
@@ -212,6 +238,13 @@ button.btn.help-btn:hover, .message button:hover {
 }
 .help-btn-cont button.btn {
 	margin-top: -2.93442622951%;
+}
+.modal-body form .btn {
+	margin-top: 0px
+}
+.modal-footer button {
+	background-color: #fff;
+	color: #40313f;
 }
 /**********************
 Cards
@@ -223,7 +256,7 @@ Cards
 	padding: 0px 0px; 
 	min-height: 250px;
 }
-.help .help-card, section.team img, .founder-info, section.message form, .help-btn-cont{
+.help .help-card, section.team img, .founder-info, section.message form, .modal-body form, .help-btn-cont{
 	box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
 	background-color: #fff;
 	padding: 20px;
@@ -249,8 +282,6 @@ section.team img {
 	padding: 30px 10px;
 	box-shadow:   0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
   border-radius: 5px
-	
-	
 }
 /**********************
 Images
@@ -278,6 +309,8 @@ input.form-control:focus, textarea.form-control:focus  {
 .jumbotron form, .problem form {
 	display: inline-block;
 }
+
+
 /**********************
 Media Queries
 ***********************/
